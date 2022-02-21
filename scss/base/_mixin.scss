@@ -1,0 +1,21 @@
+@mixin color($back, $colors) {
+  background: $back;
+  color: $colors;
+}
+
+header .neon:hover,
+header .subT:hover {
+  @include color($color-principal, #0d0120);
+}
+
+footer .buttons a {
+  @include color(#16283fc2, white);
+}
+
+main .container form button {
+  @include color(#7d9aec,#ffffff);
+}
+
+nav a:hover{
+  @include color(#f0f0f0,rgb(145, 168, 231));
+}

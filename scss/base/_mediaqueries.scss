@@ -1,0 +1,73 @@
+$breakpoints: (
+    sm: 480px,
+    md: 768px,
+    lg: 1024
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints,$breakpoint)) {
+        @content;
+    }
+}
+header .hero .n2{
+@include media-up(sm){
+    font-size: 45px;
+}
+}
+
+
+main section nav a{
+    
+    @include media-up(sm){
+        font-size: 10px;
+    }
+}
+
+main section .secciones{
+    @include media-up(md){
+        width: 90%;
+    }
+}
+
+main section .secciones p{
+    @include media-up(sm){
+        font-size: 12px;
+        line-height: 28px;
+    }
+    @include media-up(md){
+        line-height: 35px;
+    }
+}
+
+footer .buttons a{
+    
+    @include media-up(sm){
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 42%;
+        font-size: 17px;
+    }
+    @include media-up(md){
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 42%;
+        font-size: 24px;
+    }
+}
+
+footer p{
+    @include media-up(sm){
+    font-size: 11px;
+    }
+}
+
+main .container form{
+    @include media-up(md){
+        width: 75%;
+    }
+    @include media-up(sm){
+        width: 95%;
+    }
+}

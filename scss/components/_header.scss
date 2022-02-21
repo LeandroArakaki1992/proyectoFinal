@@ -1,0 +1,45 @@
+@import "../base/variables";
+/* estilos header */
+header {
+  #particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  .hero {
+    position: relative;
+    .subT {
+      border-radius: 2px;
+      font-size: 15px;
+    }
+    .neon {
+      position: relative;
+      display: inline-block;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: $medida-principal;
+      text-decoration: none;
+      overflow: hidden;
+      transition: 0.2;
+      text-shadow: 0 0 $medida-principal #000000,
+        0 0 $medida-principal $color-principal, 0 0 20px $color-principal;
+      z-index: 99;
+    }
+    .n2 {
+      margin-bottom: 35px;
+      margin-top: $medida-principal;
+      border-radius: $medida-principal;
+      font-size: 70px;
+    }
+    img {
+      margin-top: 30px;
+    }
+  }
+  .neon:hover,
+  .subT:hover {
+    box-shadow: 0 0 30px $color-principal, 0 0 60px $color-principal,
+      0 0 80px $color-principal;
+    border-radius: 20px;
+  }
+}

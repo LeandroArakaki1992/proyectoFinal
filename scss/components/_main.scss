@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+/* estilos main */
+main {
+  section {
+    nav {
+      background: rgba(255, 255, 255, 0.678);
+      height: 80px;
+      box-shadow: rgb(255, 255, 255) 0px 8px 24px;
+      display: flex;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+      z-index: 90;
+      a {
+        flex: 1;
+        height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+      }
+    }
+    .secciones {
+      margin: auto;
+      padding-top: 90px;
+      .card {
+        background: rgb(255, 255, 255);
+        height: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      h2 {
+        font-size: 25px;
+        margin: 5px;
+      }
+      p {
+        line-height: 38px;
+        margin-bottom: $medida-principal;
+        color: #494949;
+        font-size: 15px;
+      }
+      img {
+        vertical-align: top;
+        margin-bottom: $medida-principal;
+      }
+    }
+  }
+}
+
