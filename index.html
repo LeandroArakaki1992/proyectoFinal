@@ -40,24 +40,28 @@
 
       <!-- logo -->
       <a href="#" class="hero" id="home">
-        <img src="img/klipartz.com.png" alt="" width="180px" />
-        <h1 class="neon n2">Ski-art</h1>
-        <img src="img/monta.png" alt="" />
+        <img src="img/klipartz.com.png" alt="squiLogo" width="160px" />
+        <span class="neon n2">Ski-art</span>
+        <h1 class="titulo neon">Parque de snowboard</h1>
+        <img src="img/monta.png" alt="montLogo" width="640px" />
       </a>
+
+      <!-- nav -->
     </header>
+
     <main>
       <section>
-        <!-- nav -->
         <nav>
-          <a href="#home">
-            <img src="img/home.png" alt=" " height="20px" /> Home
-          </a>
-          <a href="#1">Sección 1</a>
-          <a href="#2">Sección 2</a>
-          <a href="pages/actividades.html">Actividades</a>
-          <a href="pages/contactanos.html"> Contactos</a>
+          <div>
+            <a href="#home"
+              ><img src="img/home.png" alt="home" height="20px" />Home</a
+            >
+            <a href="pages/actividades.html">Actividades</a>
+            <a href="pages/galeria.html">galeria</a>
+            <a href="pages/tarifas.html">tarifas</a>
+            <a href="pages/contactanos.html">Contacto</a>
+          </div>
         </nav>
-
         <div class="secciones" id="1">
           <div class="card">
             <h2>Snowpark</h2>
@@ -70,20 +74,20 @@
               >
                 <div class="carousel-inner col-12">
                   <div class="carousel-item active">
-                    <img src="img/diaSki.jpg" class="d-block w-100" alt="..." />
+                    <img src="img/diaSki.jpg" class="d-block w-100" alt="ski" />
                   </div>
                   <div class="carousel-item col-12">
                     <img
                       src="img/esquiSalto.jpg"
                       class="d-block w-100"
-                      alt="..."
+                      alt="skiSalto"
                     />
                   </div>
                   <div class="carousel-item col-12">
                     <img
                       src="img/nocheSki.jpg"
                       class="d-block w-100"
-                      alt="..."
+                      alt="nieveNoche"
                     />
                   </div>
                 </div>
@@ -132,7 +136,28 @@
         <div class="secciones" id="2">
           <div class="card">
             <h2>Escuela de Ski</h2>
-            <img src="img/la_hoya_sky.jpg" alt="" />
+            <!-- carrusel 2 -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/familiaNieve.jpg" class="d-block w-100" alt="familiaNieve">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/chicosSki.jpg" class="d-block w-100" alt="chicosClasesDeSki">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/claseSki1.jpg" class="d-block w-100" alt="clasesDeSkiAdultos">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <p>
               Guardería infantil clases de esquí y snowboard para todos los
               niveles. El edificio de la Escuela de Esquí y Snowboard se
@@ -152,7 +177,7 @@
       </section>
     </main>
     <footer>
-      <section class="buttons">
+      <div class="buttons">
         <a
           href="https://www.facebook.com/"
           class="fa fa-facebook"
@@ -169,7 +194,7 @@
           class="fa fa-youtube"
           target="blank"
         ></a>
-      </section>
+      </div>
       <br />
       <p>Ski-Art Agent S.L. - Todos los derechos reservados</p>
     </footer>

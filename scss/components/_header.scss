@@ -1,4 +1,3 @@
-@import "../base/variables";
 /* estilos header */
 header {
   #particles-js {
@@ -9,28 +8,29 @@ header {
   }
   .hero {
     position: relative;
-    .subT {
-      border-radius: 2px;
-      font-size: 15px;
-    }
+    @extend %display-flex;
     .neon {
       position: relative;
       display: inline-block;
       color: #ffffff;
       text-transform: uppercase;
-      letter-spacing: $medida-principal;
       text-decoration: none;
       overflow: hidden;
-      transition: 0.2;
+      letter-spacing: 8px;
       text-shadow: 0 0 $medida-principal #000000,
         0 0 $medida-principal $color-principal, 0 0 20px $color-principal;
+      transition: 0.2;
       z-index: 99;
+    }
+    .titulo {
+      font-family: crossorigin;
+      font-size: xx-large;
     }
     .n2 {
       margin-bottom: 35px;
+      font-size: 58px;
       margin-top: $medida-principal;
       border-radius: $medida-principal;
-      font-size: 70px;
     }
     img {
       margin-top: 30px;
@@ -38,8 +38,9 @@ header {
   }
   .neon:hover,
   .subT:hover {
+    @include color(#e1dae6, #0d0120);
+    border-radius: 20px;
     box-shadow: 0 0 30px $color-principal, 0 0 60px $color-principal,
       0 0 80px $color-principal;
-    border-radius: 20px;
   }
 }

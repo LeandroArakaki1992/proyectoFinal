@@ -1,26 +1,7 @@
+/* extends */
 %display-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-header .hero {
-  @extend %display-flex;
-}
-
-main section nav a {
-  @extend %display-flex;
-}
-
-main section .secciones {
-  @extend %display-flex;
-}
-
-main .container {
-  @extend %display-flex;
-}
-
-main .container form {
-  @extend %display-flex;
 }

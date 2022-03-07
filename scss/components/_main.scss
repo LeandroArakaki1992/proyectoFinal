@@ -1,28 +1,39 @@
-@import "../base/variables";
-
 /* estilos main */
 main {
   section {
     nav {
-      background: rgba(255, 255, 255, 0.678);
-      height: 80px;
-      box-shadow: rgb(255, 255, 255) 0px 8px 24px;
-      display: flex;
+      box-shadow: rgba(255, 255, 255, 0.603) 0px 8px 24px;
       position: sticky;
       top: 0;
-      overflow: hidden;
       z-index: 90;
-      a {
-        flex: 1;
-        height: 100%;
-        text-transform: uppercase;
-        text-align: center;
-        color: #000;
+      div {
+        background: rgba(255, 255, 255, 0.678);
+        height: 80px;
+        box-shadow: rgba(255, 255, 255, 0.63) 0px 8px 24px;
+        display: flex;
+        overflow: hidden;
+        z-index: 90;
+        a {
+          flex: 1;
+          height: 100%;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: #000;
+        }
+      }
+
+      a:hover {
+        @include color(#f0f0f0, rgb(17, 0, 29));
       }
     }
     .secciones {
+      @extend %display-flex;
       margin: auto;
       padding-top: 90px;
+      width: $width-principal - 30;
       .card {
         background: rgb(255, 255, 255);
         height: 90%;
@@ -37,15 +48,15 @@ main {
       }
       p {
         line-height: 38px;
-        margin-bottom: $medida-principal;
         color: #494949;
         font-size: 15px;
+        margin-bottom: $medida-principal;
       }
       img {
         vertical-align: top;
         margin-bottom: $medida-principal;
+        width: $width-principal - 35;
       }
     }
   }
 }
-

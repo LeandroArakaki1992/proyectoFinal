@@ -1,14 +1,13 @@
+@import "base/variables";
+@import "base/operaciones";
+@import "base/mixin";
 @import "components/body";
 @import "components/header";
 @import "components/main";
 @import "components/footer";
 @import "components/estilosContactos";
-@import "base/variables";
-/* operaciones */
-@import "base/operaciones";
-/* extends*/
-@import "base/extends";
-/* mixin */
-@import "base/mixin";
-/* mediaqueries */
+@import "components/estilosGaleria";
+@import "components/estilosTarifas";
 @import "base/mediaqueries";
+@import "base/extends";
+

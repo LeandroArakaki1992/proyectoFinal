@@ -6,9 +6,17 @@
 }
 main {
   .container {
+    @extend %display-flex;
+    h1 {
+      font-family: crossorigin;
+      text-transform: uppercase;
+    }
     form {
-      background-color: white;
+      @extend %display-flex;
+      background-color: rgba(255, 255, 255, 0.466);
       height: 500px;
+      width: $width-principal - 55;
+      margin-top: 32px;
       margin-bottom: 10px;
       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
         rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
@@ -17,18 +25,22 @@ main {
         rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
         rgba(0, 0, 0, 0.09) 0px 32px 16px;
       border-radius: 10px;
-      z-index: 99;
+      z-index: 50;
       input,
       textarea {
+        background-color: rgba(255, 255, 255, 0.301);
+        width: $width-principal - 20;
         border: none;
         resize: none;
         outline: none;
         padding: 5px;
         margin: 20px;
         transition: all 300ms;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.144);
       }
       button {
+        width: ($width-principal/2) - 20;
+        @include color(#7d9bec9a, #ffffff);
         border: none;
         outline: none;
         padding: 15px;
@@ -39,8 +51,12 @@ main {
       }
       input:focus,
       textarea:focus {
-        border-bottom-color: rgba(4, 46, 185, 0.63);
+        border-bottom-color: #7d9bec9a;
       }
+    }
+    button:hover {
+      transition: 0.5s all;
+      transform: scale(1.1);
     }
   }
 }
