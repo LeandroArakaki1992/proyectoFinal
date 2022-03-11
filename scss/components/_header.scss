@@ -1,7 +1,7 @@
 /* estilos header */
 header {
   #particles-js {
-    height: 100vh;
+    height: $height-principal - 100vh;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -17,7 +17,7 @@ header {
       text-decoration: none;
       overflow: hidden;
       letter-spacing: 8px;
-      text-shadow: 0 0 $medida-principal #000000,
+      text-shadow: 0 0 $medida-principal $color-secundario,
         0 0 $medida-principal $color-principal, 0 0 20px $color-principal;
       transition: 0.2;
       z-index: 99;
@@ -25,6 +25,7 @@ header {
     .titulo {
       font-family: crossorigin;
       font-size: xx-large;
+      pointer-events: none;
     }
     .n2 {
       margin-bottom: 35px;

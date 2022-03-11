@@ -36,7 +36,8 @@ header .hero {
     z-index: 99; }
   header .hero .titulo {
     font-family: crossorigin;
-    font-size: xx-large; }
+    font-size: xx-large;
+    pointer-events: none; }
   header .hero .n2 {
     margin-bottom: 35px;
     font-size: 58px;
@@ -73,7 +74,7 @@ main section nav {
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #000; }
+      color: #000000; }
   main section nav a:hover {
     background: #f0f0f0;
     color: #11001d; }
@@ -224,9 +225,12 @@ main section .gallery__item:nth-child(7) {
   grid-row-start: span 2; }
 
 main section .gallery__item:nth-child(8) {
-  grid-row-start: span 3; }
+  display: none; }
 
 main section .gallery__item:nth-child(9) {
+  grid-row-start: span 3; }
+
+main section .gallery__item:nth-child(10) {
   grid-row-start: span 3;
   grid-column-start: span 3; }
 
@@ -371,8 +375,10 @@ main section .contenedor {
   main section .gallery__item:nth-child(7) {
     display: none; }
   main section .gallery__item:nth-child(8) {
-    grid-row-start: span 3; }
+    display: none; }
   main section .gallery__item:nth-child(9) {
+    grid-row-start: span 3; }
+  main section .gallery__item:nth-child(10) {
     grid-row-start: span 3;
     grid-column-start: span 3; } }
 
@@ -399,13 +405,17 @@ main section .contenedor {
     grid-row-start: span 2;
     grid-column-start: span 4; }
   main section .gallery__item:nth-child(6) {
-    grid-column-start: span 3;
-    grid-row-start: span 2; }
+    display: none; }
   main section .gallery__item:nth-child(7) {
     display: none; }
   main section .gallery__item:nth-child(8) {
-    grid-row-start: span 2; }
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+    display: inline; }
   main section .gallery__item:nth-child(9) {
+    grid-row-start: span 2;
+    grid-column-start: span 2; }
+  main section .gallery__item:nth-child(10) {
     grid-row-start: span 2;
     grid-column-start: span 4; } }
 
@@ -437,10 +447,11 @@ main section .contenedor {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 15px; }
+    font-size: 12px; }
     main section .contenedor .tabla {
       padding: 35px;
-      width: 80%; }
+      width: 90%;
+      height: 430px; }
       main section .contenedor .tabla h2 {
         margin-top: 30px;
         font-size: 24px; } }

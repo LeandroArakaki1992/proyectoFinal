@@ -57,7 +57,7 @@ main {
       }
       .tabla:hover {
         background: #343759;
-        color: #000000;
+        color: $color-secundario;
         transition: 0.5s all;
         transform: scale(1.1);
         cursor: pointer;
